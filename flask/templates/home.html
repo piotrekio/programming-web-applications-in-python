@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <a href="{{ url_for('create') }}">Paste</a>
+    <ul>
+    {% for element in elements %}
+        <li><a href="{{ url_for('show', unique_id=element.unique_id) }}">{{ element.title }}</a>
+    {% endfor %}
+    </ul>
+{% endblock %}

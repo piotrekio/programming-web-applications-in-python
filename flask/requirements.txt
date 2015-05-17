@@ -1,0 +1,5 @@
+Flask==0.10.1
+redis==2.10.3
+WTForms==2.0.2
+Flask-WTF==0.11
+hashids==1.1.0

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{{ title }}</h2>
+    <div id="content">{{ content|safe }}</div>
+    <style type="text/css">
+        #content {
+            font-family: Courier, sans-serif;
+            background: #ccc;
+            padding: 10px;
+            max-width: 1000px;
+            white-space: pre-wrap;
+        }
+    </style>
+{% endblock %}

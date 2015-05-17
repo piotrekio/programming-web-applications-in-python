@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <a href="{% url 'pastes:create' %}">Paste</a>
+    <ul>
+    {% for paste in pastes %}
+        <li><a href="{% url 'pastes:show' paste.unique_id %}">{{ paste.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}

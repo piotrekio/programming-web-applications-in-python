@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST" action="{{ url_for('create') }}">
+        {{ form.csrf_token }}
+        <p>
+            <label>Title:</label>
+            {{ form.title }}
+        </p>
+        <p>
+            <label>Content:</label>
+            {{ form.content }}
+        </p>
+        <input type="submit" value="Paste">
+    </form>
+{% endblock %}
